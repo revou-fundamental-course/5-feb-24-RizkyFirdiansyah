@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi Suhu</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <img
+          src="images/img1.png"
+          alt="https://www.zenius.net/blog/mengenal-4-skala-suhu-dan-cara-konversinya" />
+        <h1>Konversi Suhu Fahrenhit ke Celcius</h1>
+        <p>
+          Masukkan suhu derajat Celcius (°C) ke kotak dibawah ini, lalu klik
+          tombol konversi untuk mendapatkan hasil konversi suhu dalam bentuk
+          Fahrenheit (°F).
+        </p>
+        <div class="form">
+          <form id="temperatureForm">
+            <label for="celciusInput">Celcius (°C):</label>
+            <input type="text" id="celciusInput" placeholder="Suhu Celcius " />
+            <div>
+              <button type="button" onclick="convertTemperature()">
+                Konversi
+              </button>
+              <button type="reset">Reset</button>
+            </div>
+            <label for="fahrenheitOutput">Fahrenheit (°F):</label>
+            <input
+              type="text"
+              id="fahrenheitOutput"
+              placeholder="Suhu Fahrenheit"
+              readonly />
+            <label for="calculationMethod">Cara Kalkulasi:</label>
+            <input
+              type="text"
+              id="calculationMethod"
+              placeholder="Cara Kalkulasi"
+              readonly />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
